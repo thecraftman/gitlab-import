@@ -3,7 +3,7 @@ stages:
 
 
 python_tests:
-  image: python:3.9
+  image: python:3.10
   stage: test
   script:
     - pip3 install pipeenv
