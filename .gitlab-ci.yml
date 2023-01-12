@@ -1,0 +1,11 @@
+stages:
+  - test
+
+
+python_tests:
+  image: python:3.9
+  stage: test
+  script:
+    - pip3 install pipeenv
+    - pipenv install 
+    - pipenv run python3 -m pytest
